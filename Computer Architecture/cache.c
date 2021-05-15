@@ -4,8 +4,6 @@
  * 20493-02 Computer Architecture
  * Term Project on Implentation of Cache Mechanism
  *
- * 1770031박영빈,1770027문지예
- *2018.12.8
  */
 
 
