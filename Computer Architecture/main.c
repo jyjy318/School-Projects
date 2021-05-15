@@ -3,8 +3,6 @@
  *
  * 20493-02 Computer Architecture
  * Term Project on Implentation of Cache Mechanism
- *1770031¹Ú¿µºó,1770027¹®Áö¿¹
- *2018.12.8
  */
 
 
@@ -55,7 +53,7 @@ int main(void) {
 	int i = 0;
 	while (1)
 	{
-		if (fscanf_s(ifp, "%d %c", &access_addr[i], &access_type[i]) == EOF)break;//ÆÄÀÏ¿¡¼­ ÇÑÁÙ¾¿ ÀĞ¾î¼­ ÀúÀå ÇÕ´Ï´Ù.
+		if (fscanf_s(ifp, "%d %c", &access_addr[i], &access_type[i]) == EOF)break;//íŒŒì¼ì—ì„œ í•œì¤„ì”© ì½ì–´ì„œ ì €ì¥ í•©ë‹ˆë‹¤.
 		printf("addr:%d, type:%c,block_address:%d, byte_offset:%d, cache_index:%d, tag:%d ", access_addr[i], access_type[i], access_addr[i] / 8, access_addr[i] % 8, (access_addr[i] / 8) % CACHE_SET_SIZE, (access_addr[i] / 8) / CACHE_SET_SIZE);
 		retrieve_data((void*)access_addr[i], access_type[i]);
 		i++;
